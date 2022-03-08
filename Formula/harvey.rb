@@ -1,9 +1,9 @@
 class Harvey < Formula
   desc "A simple CLI for Harvest."
   homepage "https://github.com/simonrauch/harvey"
-  url "https://github.com/simonrauch/harvey/releases/download/v2.0.6/harvey-macos-x64.tar.gz"
-  sha256 "99ac2459d4aea853471ca62c70382b3cb96e395f7707524e364051edeea5c948"
-  version "2.0.6"
+  url "https://github.com/simonrauch/harvey/releases/download/v2.0.10/harvey-macos-x64.tar.gz"
+  sha256 "ce1cee4c8d49cdd6a0891eee3487dad5c69b99fe562c2c504894b3fda784b98e"
+  version "2.0.10"
   def install
     bin.install "harvey"
   end
