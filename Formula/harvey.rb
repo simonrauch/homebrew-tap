@@ -1,10 +1,24 @@
+require "language/node"
+
 class Harvey < Formula
-  desc "A simple CLI for Harvest."
-  homepage "https://github.com/simonrauch/harvey"
-  url "https://github.com/simonrauch/harvey/releases/download/v2.3.3/harvey-macos-x64.tar.gz"
-  sha256 "581b3b0f21f359155732c729533979cf133deb6f020d099d1b856948a55280d6"
-  version "2.3.3"
+  desc "A simple CLI for Harvest"
+  homepage "https://github.com/simonrauch/harvey#readme"
+  url "https://registry.npmjs.org/@simonrauch/harvey/-/harvey-2.3.3.tgz"
+  sha256 "5bd9974053a2e91df53c15ab177165800b369bdecd235518b903a4fdbf4ecb19"
+  license "MIT"
+
+  livecheck do
+    url :stable
+  end
+
+  depends_on "node"
+
   def install
-    bin.install "harvey"
+    system "npm", "install", *Language::Node.std_npm_install_args(libexec)
+    bin.install_symlink Dir["#{libexec}/bin/*"]
+  end
+
+  test do
+    raise "Test not implemented."
   end
 end
