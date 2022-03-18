@@ -3,8 +3,8 @@ require "language/node"
 class Harvey < Formula
   desc "A simple CLI for Harvest"
   homepage "https://github.com/simonrauch/harvey#readme"
-  url "https://registry.npmjs.org/@simonrauch/harvey/-/harvey-2.3.36.tgz"
-  sha256 "28083d4d998be22f28fa9511f01d17559d3f86d002356f9dc4a03a9bb02a0470"
+  url "https://registry.npmjs.org/@simonrauch/harvey/-/harvey-2.4.0.tgz"
+  sha256 "18255f9bd80d05af39dba3b48435e91ce18784c817b012c526e7d8f704d8fb7b"
   license "MIT"
 
   livecheck do
